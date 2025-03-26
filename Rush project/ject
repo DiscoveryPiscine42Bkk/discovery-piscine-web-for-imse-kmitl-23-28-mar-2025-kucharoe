@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css"> 
+ body {
+    font-family: "Poppins", sans-serif;
+    background-color:rgb(17, 131, 231);
+    color: #333;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solidrgb(115, 231, 237);
+}
+
+.skills, .experience {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0
+</head>
+<body>
+    <!-- เมนูนำทาง -->
+    <nav class="navbar">
+        <h1>My Resume</h1>
+    </nav>
+
+    <!-- ส่วนโปรไฟล์ -->
+    <section class="Resume1">
+        <img src="my-photo.jpg" alt="My Profile Photo" class="Resume1-photo">
+        <h2>คุณานนต์ เจริญสุภกร </h2>
+        <p>อายุ: 20</p>
+        <p>อีเมล: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+    </section>
+    
+   section class="Resume2">
+        <img src="my-photo.jpg" alt="My Profile Photo" class="Resume2-photo">
+        <h2>คุณานนต์ เจริญสุภกร </h2>
+        <p>อายุ: 20</p>
+        <p>อีเมล: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+    </section>
+    
+
+    <!-- ทักษะ -->
+    <section class="skills">
+        <h3>ทักษะของฉัน</h3>
+        <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- ประสบการณ์ทำงาน -->
+    <section class="experience">
+        <h3>ประสบการณ์ทำงาน</h3>
+        <p>นักพัฒนาเว็บไซต์ที่ XYZ Company (2023 - ปัจจุบัน)</p>
+    </section>
+
+    <script src="script.js"></script>
