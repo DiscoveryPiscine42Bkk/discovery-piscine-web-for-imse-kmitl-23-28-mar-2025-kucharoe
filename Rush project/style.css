@@ -1,0 +1,41 @@
+<head>body {
+    x font-family: "Poppins", sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.profile-item {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff6f00;
+}
+
+a {
+    color: #ff6f00;
+}
+
+</head>
