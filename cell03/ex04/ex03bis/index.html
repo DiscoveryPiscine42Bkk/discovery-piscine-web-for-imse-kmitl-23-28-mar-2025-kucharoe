@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #ft_list > div {
+            margin: 10px;
+            background-color: #14bbd8;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #ft_list > div:hover {
+            background-color: #1fdae0;
+        }
+    </style>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            text-align: center;
+        }
+        #newTodo {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 100%; text-align: center">
+        <h1>TODO LIST</h1>
+        <div id="ft_list" style="margin-left: auto; margin-right: auto; padding: 10px"></div>
+        <button id="newTodo">NEW</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            function loadTodos() {
+                document.cookie.split(";").forEach(cookie => {
+                    let [key, value] = cookie.split("=");
+                    if (value) createTodo(value, key);
+                });
+            }
+            
+            function createTodo(txt, id = Date.now()) {
+                let node = $(`<div>${txt}</div>`);
+                node.css({
+                    "margin": "10px",
+                    "background-color": "#14bbd8",
+                    "padding": "10px",
+                    "border-radius": "10px",
+                    "cursor": "pointer"
+                });
+                node.on("click", function () {
+                    if (confirm("Do you want to delete?")) {
+                        $(this).remove();
+                        document.cookie = id + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+                    }
+                });
+                $("#ft_list").prepend(node);
+            }
+            
+            $("#newTodo").on("click", function () {
+                let txt = prompt("Please Enter TODO LIST:");
+                console.log(txt)
+                if (txt) {
+                    document.cookie = Date.now() + "=" + txt;
+                    createTodo(txt);
+                }
+            });
+            
+            loadTodos();
+        });
+    </script>
+</body>
+</html>
