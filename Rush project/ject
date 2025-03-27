@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="stylesheet" href="style.css"> 
- body {
+    <link rel="stylesheet" href="style.css">
+    body {
     font-family: "Poppins", sans-serif;
-    background-color:rgb(17, 131, 231);
+    background-color: #f0f8ff;
     color: #333;
     text-align: center;
 }
@@ -19,20 +19,31 @@
     font-size: 24px;
 }
 
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.profile-item {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solidrgb(115, 231, 237);
+    border: 3px solid #ff6f00;
 }
 
-.skills, .experience {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0
+a {
+    color: #ff6f00;
+}
 </head>
 <body>
     <!-- เมนูนำทาง -->
@@ -41,36 +52,26 @@
     </nav>
 
     <!-- ส่วนโปรไฟล์ -->
-    <section class="Resume1">
-        <img src="my-photo.jpg" alt="My Profile Photo" class="Resume1-photo">
-        <h2>คุณานนต์ เจริญสุภกร </h2>
-        <p>อายุ: 20</p>
-        <p>อีเมล: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-    </section>
-    
-   section class="Resume2">
-        <img src="my-photo.jpg" alt="My Profile Photo" class="Resume2-photo">
-        <h2>คุณานนต์ เจริญสุภกร </h2>
-        <p>อายุ: 20</p>
-        <p>อีเมล: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-    </section>
-    
+    <section class="profile">
+        <div class="profile-item">
+  
 
-    <!-- ทักษะ -->
-    <section class="skills">
-        <h3>ทักษะของฉัน</h3>
-        <ul>
-            <li>HTML / CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Python</li>
-        </ul>
-    </section>
-
-    <!-- ประสบการณ์ทำงาน -->
-    <section class="experience">
-        <h3>ประสบการณ์ทำงาน</h3>
-        <p>นักพัฒนาเว็บไซต์ที่ XYZ Company (2023 - ปัจจุบัน)</p>
+           <img src="photo1.jpg" alt="Person 1" class="profile-photo">
+            <h2>นายคุณานนต์ เจริญสุภกร (จั๋ง)</h2>
+            <p>อายุ: 20</p>
+            <p>อีเมล: <a href="mailto:6610026@kmitl.ac.th">66160003@kmitl.ac.th</a></p>
+            <p>ความสามารถพิเศษ:เปียโน</p>
+        </div>
+        
+        <div class="profile-item">
+            <img src="photo2.jpg" alt="Person 2" class="profile-photo">
+            <h2>นายณัฏฐ์คเณศ ทีปกาปรวัฒน์ (พชร)</h2>
+            <p>อายุ: 20</p>
+            <p>อีเมล: <a href="mailto:66160012@kmitl.ac.th">66160012@kmitl.ac.th</a></p>
+            <p>ความสามารถพิเศษ:เล่นเบส</p>
+        </div>
     </section>
 
     <script src="script.js"></script>
+</body>
+</html>   
