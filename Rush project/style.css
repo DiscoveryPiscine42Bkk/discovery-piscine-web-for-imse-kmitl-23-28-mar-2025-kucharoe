@@ -1,13 +1,13 @@
 <head>body {
     x font-family: "Poppins", sans-serif;
-    background-color: #f0f8ff;
+    background-color: #ffff00;
     color: #333;
     text-align: center;
 }
 
 .navbar {
-    background-color: #333;
-    color: white;
+    background-color: #d5a431;
+    color: rgb(144, 240, 33);
     padding: 15px;
     font-size: 24px;
 }
@@ -21,10 +21,10 @@
 
 .profile-item {
     text-align: center;
-    background-color: white;
+    background-color: rgb(190, 34, 34);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(152, 247, 35, 0.1);
 }
 
 .profile-photo {
